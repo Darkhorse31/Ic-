@@ -1,0 +1,244 @@
+$text_color: #0a0356;
+$bg_color: #ed553b;
+$boldColor: #071e22;
+$light_text: #F4c095;
+
+.m_div {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/ii.svg");
+    background-position: length($list: 56) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+
+    .typewriter {
+        margin-top: 30px;
+        align-self: center;
+    }
+
+    .typewriter .typ {
+        color: transparent;
+        background: linear-gradient(270deg, #f3007f, #7102dd, #ff0000, #1901d3);
+        background-size: 800% 800%;
+
+        -webkit-animation: AnimationName 59s ease infinite;
+        -moz-animation: AnimationName 59s ease infinite;
+        animation: AnimationName 59s ease infinite;
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        font-size: clamp(30px, 3vw, 60px);
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: 2px solid $boldColor;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em;
+        /* Adjust as needed */
+        animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100%
+        }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent
+        }
+
+        50% {
+            border-color: rgb(84, 30, 210)
+        }
+    }
+
+    @-webkit-keyframes transtition {
+        0% {
+            background-position: 0% 13%
+        }
+
+        50% {
+            background-position: 100% 88%
+        }
+
+        100% {
+            background-position: 0% 13%
+        }
+    }
+
+    @-moz-keyframes transtition {
+        0% {
+            background-position: 0% 13%
+        }
+
+        50% {
+            background-position: 100% 88%
+        }
+
+        100% {
+            background-position: 0% 13%
+        }
+    }
+
+    @-o-keyframes transtition {
+        0% {
+            background-position: 0% 13%
+        }
+
+        50% {
+            background-position: 100% 88%
+        }
+
+        100% {
+            background-position: 0% 13%
+        }
+    }
+
+    @keyframes transtition {
+        0% {
+            background-position: 0% 13%
+        }
+
+        50% {
+            background-position: 100% 88%
+        }
+
+        100% {
+            background-position: 0% 13%
+        }
+    }
+
+    .form {
+        margin-top: 30px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        align-items: center;
+
+        label {
+            font-size: clamp(20px, 3.5vw, 30px);
+
+        }
+
+        #name {
+            font-size: 20px;
+            padding: 5px 5px;
+            font-family: 'Oxygen', sans-serif;
+            -webkit-text-stroke: .7px #000000;
+            -webkit-text-fill-color: transparent;
+            border-radius: none;
+            border: 1px solid rebeccapurple;
+            outline: 0;
+            &:focus{
+                background: #c5aef1a6;
+                transition: all 1s ease-in;
+            }
+
+
+
+
+
+
+        }
+
+        .send {
+            color: white;
+            padding: 5px 10px;
+            width: 200px;
+            font-size: 18px;
+
+            border-radius: 2px;
+            box-shadow: inset 5px 3px 3px 0px rgba(154, 143, 250, 0.541), 5px 3px 3px 0px rgba(154, 143, 250, 0.541);
+            border: none;
+            background: linear-gradient(270deg, #f3007f, #7102dd, #ff0000, #1901d3);
+            background-size: 700% 1000%;
+
+            -webkit-animation: AnimationName 59s ease infinite;
+            -moz-animation: AnimationName 59s ease infinite;
+            animation: AnimationName 59s ease infinite;
+
+            &:active {
+                box-shadow: none;
+            }
+
+
+        }
+    }
+
+
+}
+
+.char {
+    color: #080808;
+    color: transparent;
+    -webkit-text-stroke: 1px #5208fd;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.heart {
+    animation: animate__heartBeat 2s;
+    color: #f10c77;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 1% 0%
+    }
+
+    50% {
+        background-position: 99% 100%
+    }
+
+    100% {
+        background-position: 1% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 1% 0%
+    }
+
+    50% {
+        background-position: 99% 100%
+    }
+
+    100% {
+        background-position: 1% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 1% 0%
+    }
+
+    50% {
+        background-position: 99% 100%
+    }
+
+    100% {
+        background-position: 1% 0%
+    }
+}
